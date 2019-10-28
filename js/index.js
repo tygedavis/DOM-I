@@ -69,7 +69,9 @@ navContact.textContent = "Contact";
 
 // Main Heading Content
 
-document.querySelector('h1').textContent = "DOM IS AWESOME";
+let mainHeader = document.querySelector('h1');
+mainHeader.innerHTML = "DOM <br> IS <br> AWESOME";
+//document.querySelector('h1').textContent = "DOM IS AWESOME";
 document.querySelector('button').textContent = "Get Started";
 
 //Top Content
@@ -109,7 +111,7 @@ contactHeading.textContent = "Contact";
 
 let contactP = document.querySelectorAll('.contact p');
 //console.log(contactP);
-contactP[0].textContent = "123 Way 456 Street Somewhere, USA";
+contactP[0].innerHTML = "123 Way 456 Street<br> Somewhere, USA";
 
 contactP[1].textContent = "1 (888) 888-8888";
 
