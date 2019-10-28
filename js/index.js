@@ -59,7 +59,7 @@ let navVision = document.getElementsByTagName('a')[2];
 navVision.textContent = "Vision";
 
 let navFeatures = document.getElementsByTagName('a')[3];
-navFeatures.textContent = "Content";
+navFeatures.textContent = "Features";
 
 let navAbout = document.getElementsByTagName('a')[4];
 navAbout.textContent = "About";
