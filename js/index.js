@@ -67,6 +67,24 @@ navAbout.textContent = "About";
 let navContact = document.getElementsByTagName('a')[5]
 navContact.textContent = "Contact";
 
+//**Added Nav Links**
+let firstNewLink = document.createElement("a");
+let lastNewLink = document.createElement("a");
+
+firstNewLink.textContent = "First";
+lastNewLink.textContent = "Last";
+
+const addedContent = document.querySelector('nav');
+addedContent.prepend(firstNewLink);
+addedContent.append(lastNewLink);
+
+//This makes the styles the links green
+
+const nav = document.querySelectorAll('a');
+nav.forEach( element => {
+  element.style.color = "limegreen"; 
+});
+
 // Main Heading Content
 
 let mainHeader = document.querySelector('h1');
@@ -122,4 +140,3 @@ contactP[2].textContent = "sales@greatidea.io";
 let footer = document.querySelector('footer p');
 console.log(footer);
 footer.textContent = "Copyright Great Idea! 2018";
-
