@@ -40,3 +40,103 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let crclImg = document.getElementById("cta-img");
+crclImg.setAttribute('src', siteContent["cta"]['img-src'])
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+//Navigation Links
+
+let navServices = document.getElementsByTagName('a')[0];
+navServices.textContent = "Services";
+
+let navProduct = document.getElementsByTagName('a')[1];
+navProduct.textContent = "Pruduct";
+
+let navVision = document.getElementsByTagName('a')[2];
+navVision.textContent = "Vision";
+
+let navFeatures = document.getElementsByTagName('a')[3];
+navFeatures.textContent = "Features";
+
+let navAbout = document.getElementsByTagName('a')[4];
+navAbout.textContent = "About";
+
+let navContact = document.getElementsByTagName('a')[5]
+navContact.textContent = "Contact";
+
+//**Added Nav Links**
+let firstNewLink = document.createElement("a");
+let lastNewLink = document.createElement("a");
+
+firstNewLink.textContent = "First";
+lastNewLink.textContent = "Last";
+
+const addedContent = document.querySelector('nav');
+addedContent.prepend(firstNewLink);
+addedContent.append(lastNewLink);
+
+//This makes the styles the links green
+
+const nav = document.querySelectorAll('a');
+nav.forEach( element => {
+  element.style.color = "limegreen"; 
+});
+
+// Main Heading Content
+
+let mainHeader = document.querySelector('h1');
+mainHeader.innerHTML = "DOM <br> IS <br> AWESOME";
+//document.querySelector('h1').textContent = "DOM IS AWESOME";
+document.querySelector('button').textContent = "Get Started";
+
+//Top Content
+
+let featuresHeading = document.querySelectorAll('.top-content h4');
+//console.log(featuresHeading);
+featuresHeading[0].textContent = "Features";
+featuresHeading[1].textContent = "About";
+
+let featuresP = document.querySelectorAll('.top-content p');
+//console.log(featuresP);
+featuresP[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+featuresP[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Bottom Content
+
+let bottomHeading = document.querySelectorAll('.bottom-content h4');
+//console.log(bottomHeading);
+bottomHeading[0].textContent = "Services";
+bottomHeading[1].textContent = "Product";
+bottomHeading[2].textContent = "Vision";
+
+let bottomP = document.querySelectorAll('.bottom-content p');
+//console.log(bottomP);
+bottomP[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+bottomP[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+bottomP[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Contact Info
+
+let contactHeading = document.querySelector('.contact h4');
+//console.log(footerHeading);
+contactHeading.textContent = "Contact";
+
+let contactP = document.querySelectorAll('.contact p');
+//console.log(contactP);
+contactP[0].innerHTML = "123 Way 456 Street<br> Somewhere, USA";
+
+contactP[1].textContent = "1 (888) 888-8888";
+
+contactP[2].textContent = "sales@greatidea.io";
+
+//Footer Conent
+
+let footer = document.querySelector('footer p');
+console.log(footer);
+footer.textContent = "Copyright Great Idea! 2018";
